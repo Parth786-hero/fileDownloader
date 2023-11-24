@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+/* :root , html */
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size : 62.5%;
+    /* color : #2f3640; */
+    /* color : white; */
+}
+
+/* styling html basic elements  */
+ul li{
+    list-style: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom : .5em;
+    letter-spacing: .020em;
+}
+h1,h2,h3{
+    letter-spacing: .015em;
+    margin-bottom : .3em
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ##################### utility classes ############### */
+
+.container{
+    max-width : 1200px;
+    width : 85%;
+    margin : auto;
+}
+.blue{
+    color : #40739e;
+    /* color : lightblue; */
+    /* color : */
+}
+.white{
+    color : white;
+}
+.bg-blue{
+    background-color: #40739e;
+}
+.black{
+    color : #2f3640;
+}
+.fw-400{
+    font-weight : 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lg-heading{
+    font-size: 5.2rem;
+}
+.md-heading{
+    font-size: 2.8rem;
+}
+.small-text{
+    font-size: 1.4rem;
+}
+.normal-text{
+    font-size: 1.6rem;
+}
+
+.primary-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8em 2.8em;
+    border-radius : 0.5rem;
+}
+
+.green{
+    color : #1abc9c;
+}
+
+body{
+    width : 100%;
+    min-height : 100vh;
+    background-color: rgba(128, 128, 128, 0.111);
+    
+}
+
+/* main styling begins here...... */
+
+.md-heading{
+    padding: 1em 0;
+    
+}
+.father{
+    /* border: 2px solid red; */
+    width : 100%;
+    min-height : 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    /* border: 2px solid red; */
+    border-radius: .5rem;
+    padding: 1.5em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.058);
+    width : 45%;
+    /* background-color: #1abc9c3d; */
+    /* background-color: rgba(128, 128, 128, 0.037); */
+    /* background-color: #2f3640; */
+    /* background-color: rgba(0, 0, 0, 0.54); */
+    background-color: white;
+}
+
+.wrapper input , select{
+    border: none;
+    border : 1px solid rgba(128, 128, 128, 0.35);
+}
+.wrapper :where(textarea , button , input , select){
+    display: block;
+    width : 100%;
+    /* border: none; */
+    outline: none;
+    border-radius: .4em;
+    padding: 1em;
+    font-weight: 300;
+    /* text-transform: capitalize; */
+    font-family: 'Poppins', sans-serif;
+    /* background-color: gray; */
+}
+textarea{
+    min-height : 22rem;
+    resize: none;
+    border: 1px solid rgba(128, 128, 128, 0.608);
+}
+.data-info{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top : 1.6rem;
+}
+.input-field{
+    /* border: 2px solid red; */
+    width : 45%;
+}
+label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    /* color : #1abc9c; */
+}
+
+.wrapper button{
+    background-color: #1abc9c;
+    color : white;
+    margin-top: 2rem;
+    /* cursor: pointer; */
+    pointer-events: none;
+    opacity: .6;
+    border: none;
+}
+
+textarea:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width : 820px){
+    :root{
+        font-size: 9px;
+    }
+    .father{
+        /* border: 2px solid red; */
+    }
+    .wrapper{
+        width : 100%;
+        height : auto;
+        padding: 2rem;
+    }
+}

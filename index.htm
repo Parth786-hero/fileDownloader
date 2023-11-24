@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="md-heading capitalize main-heading"><span class="green">File</span> downloader</h2>
+        <div class="father">
+            <div class="wrapper">
+                <textarea placeholder="enter the data here ...." required></textarea>
+        
+                <div class="data-info">
+                    <div class="input-field">
+                        <label for="input" class="small-text fw-400 capitalize">File Name</label>
+                        <input id="input" type="text" placeholder="file name">
+                    </div>
+        
+                    <div class="input-field">
+                        <label for="select" class="small-text fw-400 capitalize">file type</label>
+                        <select name="" id="select">
+                            <option value="text/plain">text (.txt)</option>
+                            <option value="text/javascript">javascript (.js)</option>
+                            <option value="application/msword">word (.doc)</option>
+                            <option value="application/json">json (.json)</option>
+                            <option value="text/html">html (.html)</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <button class="normal-text fw-300">Save as text file</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
